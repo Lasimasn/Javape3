@@ -1,7 +1,6 @@
+//Program that demonstrates three different kinds of Exceptions
 package com.stackroute.pe3;
-
 import java.util.Scanner;
-
 public class GenerateDifferentException {
     Scanner scan=new Scanner(System.in);
 
@@ -14,13 +13,13 @@ public class GenerateDifferentException {
     {
         int arraySize;
         System.out.println("Enter the size of the array");
-        arraySize = scan.nextInt();
-        int array[]= new int[5];
+        arraySize = scan.nextInt();//Read size of array
+        int array[]= new int[5];//Initialize a new array
         String name="";
 
         try
         {
-            if (arraySize < 0)
+            if (arraySize < 0)//Negative array size
                 throw new NegativeArraySizeException();
         }
         catch (NegativeArraySizeException e)
@@ -28,7 +27,7 @@ public class GenerateDifferentException {
             System.out.println("Caught Negative Array Size Exception");
         }
         try
-        { int i=array[6];
+        { int i=array[6];//Index out of bounds
             throw new IndexOutOfBoundsException();
         }
         catch (IndexOutOfBoundsException e)
@@ -37,7 +36,7 @@ public class GenerateDifferentException {
         }
         try
         {
-            if(name.equals(""))
+            if(name.equals(""))//if no name is specified throw exception
             throw new NullPointerException();
         }
         catch (NullPointerException e)

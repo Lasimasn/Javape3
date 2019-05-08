@@ -1,8 +1,7 @@
+//Program to print a chess board with 8 rows and columns
 package com.stackroute.pe3;
 
 import java.util.Scanner;
-
-//Program to print a chess board with 8 rows and columns
 public class ChessBoard {
     Scanner scan;
     public static void main(String args[])
@@ -11,7 +10,7 @@ public class ChessBoard {
         chess.displayChessBoard();
     }
     public void displayChessBoard() {//loop to print a chess board of 8 rows and columns
-        String [][]array=new String[8][8];
+        String [][]array=new String[8][8];//Declaring a 8 by 8 array
         for (int i = 0; i < 8; i++){
             for (int j = 0; j < 8; j++) {
                 if (i % 2 == 0) {
