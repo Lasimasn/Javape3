@@ -1,9 +1,12 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
+<<<<<<< HEAD
 .gitignore
 
 
+=======
+>>>>>>> 384360906e5b41caf7617e8db2c682ce0c2b7610
 #Folders
 .idea
 
